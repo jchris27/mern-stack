@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 
-// define your schema
 const noteSchema = new mongoose.Schema(
     {
         user: {
