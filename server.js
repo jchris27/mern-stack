@@ -26,6 +26,8 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', require('./routes/root'));
 // users endpoint
 app.use('/users', require('./routes/userRoutes'))
+// notes endpoint
+app.use('/notes', require('./routes/noteRoutes'))
 
 // serve the 404 file to any other routes that's not define.
 app.all('*', (req, res) => {
